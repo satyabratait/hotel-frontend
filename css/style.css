@@ -1,0 +1,365 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar img {
+  width: 25%;
+}
+
+.aboutUs {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.aboutUs-partOne {
+  width: 100%;
+  color: white;
+  padding-left: 6%;
+}
+
+.aboutUs-partTwo {
+  display: flex;
+  justify-content: start;
+  padding-left: 6%;
+  width: 100%;
+}
+
+.aboutUs-partTwo form {
+  width: 75%;
+}
+
+.checkIn {
+  width: 50%;
+}
+
+.checkOut {
+  width: 50%;
+}
+
+.userRoom {
+  width: 25%;
+}
+
+.childRoom {
+  width: 25%;
+}
+
+.aboutUs-partOne button {
+  width: 60%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+
+.welcomeContent {
+  padding: 7% 5% 5% 5%;
+}
+
+.welcomeImages {
+  position: relative;
+}
+
+.welcomeImages img {
+  width: 30%;
+}
+
+.welcomeImagesFirst {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+.welcomeImagesThird {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 13%;
+}
+
+.welcomeImagesSecond {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+.aboutRooms {
+  width: 100%;
+  padding-top: 6%;
+  padding-left: 5%;
+  padding-bottom: 4%;
+}
+
+.rooms button {
+  width: 60%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+
+.roomsImage {
+  width: 100%;
+}
+
+.aboutRooms {
+  background-color: #0a205c;
+  color: white;
+}
+
+.reasonsToChoose img {
+  padding-top: -10%;
+}
+
+.activites {
+  background-color: #0a205c;
+  color: white;
+}
+
+.activites img {
+  width: 100%;
+}
+
+.activites button {
+  width: 60%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+
+.discover {
+  background: url("/assets/discover-more/swimming.jpeg"), no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.discover div {
+  width: 60%;
+  margin: 10% 10% 10% 3%;
+  padding: 5% 5% 5% 5%;
+}
+
+.servicesOffered div {
+  width: 100%;
+}
+
+.servicesOffered img {
+  width: 100%;
+}
+
+.services button {
+  width: 60%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  background: transparent;
+  border-color: #0a205c;
+  color: #0a205c;
+}
+
+.reviews{
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.reviewsOwlImage {
+  width: 10%;
+  background-color: rgb(21, 233, 74);
+}
+
+.reviewsCircle {
+  background-color: rgb(8, 90, 28);
+  width: 1px;
+}
+
+.location div {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 200%;
+}
+
+.joinUs {
+  background-color: #daf7a6;
+}
+
+.joinUsImages {
+  margin-top: 0%;
+  margin-bottom: 4%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.subscribeNewsForm {
+  width: 100%;
+}
+
+footer {
+  background-color: #0a205c;
+}
+
+@media screen and (min-width: 576px) {
+  .aboutUs-partOne button {
+    width: 40%;
+  }
+
+  .rooms button {
+    width: 40%;
+  }
+
+  .services button {
+    width: 40%;
+  }
+
+  .activites button {
+    width: 40%;
+  }
+
+  .subscribeNewsForm {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar img {
+    width: 15%;
+  }
+
+  .aboutUs-partOne {
+    width: 50%;
+    padding-left: 5%;
+  }
+
+  .aboutUs-partTwo {
+    justify-content: center;
+    width: 50%;
+  }
+
+  .checkIn {
+    width: 50%;
+  }
+
+  .checkOut {
+    width: 50%;
+  }
+
+  .userRoom {
+    width: 25%;
+  }
+
+  .childRoom {
+    width: 25%;
+  }
+
+  .aboutUs-partOne button {
+    width: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  .welcomeImagesFirst {
+    display: block;
+    position: absolute;
+    top: 10%;
+  }
+
+  .welcomeImagesThird {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 13%;
+  }
+
+  .welcomeImagesSecond {
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+  }
+
+  .aboutRooms {
+    width: 40%;
+    padding-top: 6%;
+    padding-left: 4%;
+  }
+
+  .roomsImage {
+    width: 60%;
+  }
+
+  .activites img {
+    width: 50%;
+  }
+
+  .services button {
+    width: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  .activites button {
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  .discover {
+    justify-content: end;
+  }
+
+  .discover div {
+    width: 35%;
+    margin-right: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 0%;
+    padding: 5% 5% 5% 5%;
+  }
+
+  .reviews {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .location div {
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .joinUsImages {
+    margin-top: -4%;
+    margin-bottom: 4%;
+  }
+
+  .subscribeNewsForm {
+    width: 50%;
+  }
+}
