@@ -1,9 +1,46 @@
+const submitBtn = document.getElementById("submitButton"); 
+
+
 var swiper = new Swiper(".mySwiper", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
   });
+
+  submitBtn.addEventListener("click", (e) => {
+    e.preventDefault()
+    console.log(roomForm.checkIn.value);
+    console.log(roomForm.checkOut.value);
+    console.log(roomForm.adults.value);
+    console.log(roomForm.children.value);
+    if (roomForm.checkIn.value.length > 0 &&
+    roomForm.checkOut.value.length > 0 &&
+    roomForm.adults.value.length > 0 &&
+    roomForm.children.value.length > 0) {
+      fetch("http://127.0.0.1:8080",{
+        method: "POST",
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+        body: `id=${Date.now()}&checkInDate=${roomForm.checkIn.value}&checkOutDate=${
+          roomForm.checkOut.value
+        }&noOfAdults=${roomForm.adults.value}&noOfChildren=${roomForm.children.value}`
+      }).then((res) => {
+        console.log("Request complete! response:", res);
+        submitBtn.textContent = "✓";
+        roomForm.checkIn.value = "";
+        roomForm.checkOut.value = "";
+        roomForm.adults.value = "";
+        roomForm.children.value = "";
+        setTimeout(() => {
+          submitBtn.textContent = "Submit";
+        }, 5000);
+      });
+    } else {
+      alert("fields are empty");
+    }
+  })
 
   function aboutUs(datas) {
     console.log(datas);
