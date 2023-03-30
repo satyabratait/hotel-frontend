@@ -24,39 +24,39 @@
         class="container-fluid d-flex flex-column flex-md-row justify-content-md-between justify-content-start align-items-start align-items-md-center"
       >
         <div class="d-flex flex-column">
-          <a class="navbar-brand fs-1" href="#">MIKALTO</a>
-          <a class="text-dark">HOTELS & RESORTS</a>
+          <a class="navbar-brand fs-1 textFontWeight" href="#">MIKALTO</a>
+          <a class="text-dark fw-light">HOTELS & RESORTS</a>
         </div>
         <div
-          class="collapse navbar-collapse d-flex flex-column flex-md-row justify-content-start justify-content-lg-center align-items-start align-items-md-center gap-4 ps-0 w-75"
+          class="collapse navbar-collapse d-flex flex-column flex-md-row justify-content-start justify-content-lg-around align-items-start align-items-md-center ps-0 w-75 my-2 my-md-0"
           id="navbarScroll"
         >
-          <ul class="navbar-nav mb-2 mb-lg-0">
+          <ul class="navbar-nav mb-2 mb-lg-0 d-flex gap-3">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Our Rooms</a>
+              <a href="#">Our Rooms</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Page</a>
+              <a href="#">Page</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a href="#">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a href="#">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Content</a>
+              <a href="#">Content</a>
             </li>
           </ul>
         </div>
         <div
-          class="d-flex flex-column flex-md-row align-items-md-center align-items-start justify-content-md-end w-25"
+          class="d-flex flex-column flex-md-row align-items-md-center align-items-start justify-content-lg-end w-25"
         >
           <select class="border-0">
-            <option value="" class="">EN</option>
+            <option value="EN">EN</option>
           </select>
           <img src="./assets/svg/cart-1-svgrepo-com.svg" alt="cart" />
         </div>
@@ -73,7 +73,7 @@
       >
         <h1 class="display-4 textFontWeight"></h1>
         <p></p>
-        <div class="d-flex flex-column flex-md-row gap-3">
+        <div class="d-flex flex-column flex-md-row gap-md-5">
           <a href="#">About Us</a>
           <a href="#">View HomeStay -></a>
         </div>
@@ -81,7 +81,6 @@
       <div class="aboutUs-partTwo">
         <form
           name="roomForm"
-          action=""
           class="bg-white d-flex flex-column py-5 my-4 px-2 px-lg-5"
         >
           <p class="fs-2 fw-light">Search Room</p>
@@ -98,7 +97,11 @@
                 />
                 <p class="text-primary">Checkin*</p>
               </div>
-              <input type="date" name="checkIn" class="border-0 bg-transparent" />
+              <input
+                type="date"
+                name="checkIn"
+                class="border-0 bg-transparent"
+              />
               <hr />
             </div>
             <div class="checkOut">
@@ -110,7 +113,11 @@
                 />
                 <p class="text-primary">Checkout*</p>
               </div>
-              <input type="date" name="checkOut" class="border-0 bg-transparent" />
+              <input
+                type="date"
+                name="checkOut"
+                class="border-0 bg-transparent"
+              />
               <hr />
             </div>
           </div>
@@ -188,36 +195,43 @@
         />
       </div>
     </section>
+    <!-- welcome ends -->
 
     <!-- rooms -->
-    <section class="rooms d-flex w-100 flex-column flex-md-row my-5 my-md-0">
+    <section
+      class="rooms my-5 my-md-0 d-flex w-100 flex-column flex-md-row text-start"
+    >
       <div class="aboutRooms">
-        <p class="text-muted">ELEGANCE AND COMFORT</p>
-        <p class="fs-2 textFontWeight">Standard Room</p>
-        <p>From:<span class="ms-5">$150</span>/night</p>
-        <p>
+        <p class="text-muted roomHeading">ELEGANCE AND COMFORT</p>
+        <p class="fs-2 textFontWeight roomType"></p>
+        <p class="text-muted fw-light">
+          From: <span class="roomPrice fs-4 text-white">$150</span> /night
+        </p>
+        <p class="roomAmbiance text-muted fw-light">
           With wide and comfortable areas and daylight pouring in from the...
         </p>
-        <p>Bed: <span class="ms-5">Queen Size Bed</span></p>
-        <p>Capacity: <span class="ms-3">2 adults,1 children</span></p>
-        <p>Room size: <span class="ms-1">55 sqm</span></p>
-        <p>View: <span>garden view</span></p>
-        <button class="bg-transparent text-white border-light">
-          View Details
-        </button>
+        <p>Bed: <span class="ms-5 ps-5 bedSize">Queen Size Bed</span></p>
+        <p>
+          Capacity:
+          <span class="ms-5 ps-3 roomCapacity">2 adults,1 children</span>
+        </p>
+        <p>Room size: <span class="ms-5 ps-1 roomSize">55 sqm</span></p>
+        <p>View: <span class="ms-5 ps-5 roomView">garden view</span></p>
+        <a href="#" class="text-white"> View Details </a>
       </div>
       <div class="roomsImage">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <img src="" class="swiper-slide roomsImageOne" alt="roomsImage" />
-            <img src="" class="swiper-slide roomsImageTwo" alt="roomsImage" />
-            <img src="" class="swiper-slide roomsImageThree" alt="roomsImage" />
+            <img src="" class="swiper-slide roomsImages" alt="roomsImage" />
+            <img src="" class="swiper-slide roomsImages" alt="roomsImage" />
+            <img src="" class="swiper-slide roomsImages" alt="roomsImage" />
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
       </div>
     </section>
+    <!-- rooms ends -->
 
     <!-- why choose our hotel -->
     <section class="my-md-5 my-0 reasonsToChoose px-3 px-md-5">
@@ -296,7 +310,7 @@
             tincidunt gravida, eros nulla dapibus lacus, ut dapibus diam dui vel
             tortor.
           </p>
-          <a class="text-white fw-light">Explore More -></a>
+          <a href="#" class="text-white fw-light">Explore More -></a>
         </div>
         <img
           src="./assets/activites/natureactivity.jpg"
@@ -328,7 +342,7 @@
             <li>Turkish sauna</li>
             <li>Relax and therapy message</li>
           </ul>
-          <a class="bookYourStay text-white text-center fw-light">
+          <a href="#" class="bookYourStay text-white text-center fw-light">
             Book your stay
           </a>
         </div>
@@ -356,17 +370,10 @@
         <div class="card border-0 servicesFirstCard">
           <img class="img-fluid" src="" alt="activitesImage" />
           <div class="w-100">
-            <p class="my-3 text-muted servicesFirstCardSubHeading">WELLNESS</p>
-            <p class="fs-4 textFontWeight servicesFirstCardHeading">
-              Dedicated to wellness
-            </p>
-            <p class="fs-6 text-muted servicesFirstCardContent">
-              Aman's approach to wellness is focused on personalisation, privacy
-              and seclusion. Local spa rituals with indigenous ingredients,
-              offer a profoundly therapeutic touch, and a gentle sense of
-              discovery.
-            </p>
-            <a class="fw-light">Discover more -></a>
+            <p class="my-3 text-muted servicesFirstCardSubHeading"></p>
+            <p class="fs-4 textFontWeight servicesFirstCardHeading"></p>
+            <p class="fs-6 text-muted servicesFirstCardContent"></p>
+            <a href="#" class="fw-light">Discover more -></a>
           </div>
         </div>
 
@@ -374,55 +381,35 @@
           <img class="img-fluid" src="" alt="activitesImage" />
           <div class="w-100">
             <p class="my-3 text-muted servicesSecondCardSubHeading">
-              GIFT CARDS
             </p>
-            <p class="fs-4 textFontWeight servicesSecondCardHeading">
-              The gift of future travel
-            </p>
-            <p class="fs-6 text-muted servicesSecondCardContent">
-              Share extraordinary experiences with the Aman E- Gift Card -
-              delivered instantly and offering memories that last a lifetime.
-            </p>
-            <a class="fw-light">Discover more -></a>
+            <p class="fs-4 textFontWeight servicesSecondCardHeading"></p>
+            <p class="fs-6 text-muted servicesSecondCardContent"></p>
+            <a href="#" class="fw-light">Discover more -></a>
           </div>
         </div>
 
         <div class="card border-0 servicesThirdCard">
           <img class="img-fluid" src="" alt="activitesImage" />
           <div class="w-100">
-            <p class="my-3 text-muted servicesThirdCardSubHeading">
-              MIKALTO SHOP
-            </p>
-            <p class="fs-4 textFontWeight servicesThirdCardHeading">
-              The spa experience from home
-            </p>
-            <p class="fs-6 text-muted servicesThirdCardContent">
-              Skincare and Spa supplements harness powerful natural ingredients
-              to provide balance and optimal wellbeing.
-            </p>
-            <a class="fw-light">Discover more -></a>
+            <p class="my-3 text-muted servicesThirdCardSubHeading"></p>
+            <p class="fs-4 textFontWeight servicesThirdCardHeading"></p>
+            <p class="fs-6 text-muted servicesThirdCardContent"></p>
+            <a href="#" class="fw-light">Discover more -></a>
           </div>
         </div>
 
         <div class="card border-0 servicesFourthCard">
           <img class="img-fluid" src="" alt="activitiesImage" />
           <div class="w-100">
-            <p class="my-3 text-muted servicesFourthCardSubHeading">
-              EXPERIENCE
-            </p>
-            <p class="fs-4 textFontWeight servicesFourthCardHeading">
-              Adventures in the Wild
-            </p>
-            <p class="fs-6 text-muted servicesFourthCardContent">
-              Skincare and Spa supplements harness powerful natural ingredients
-              to provide balance and optimal wellbeing.
-            </p>
-            <a class="fw-light">Discover more -></a>
+            <p class="my-3 text-muted servicesFourthCardSubHeading"></p>
+            <p class="fs-4 textFontWeight servicesFourthCardHeading"></p>
+            <p class="fs-6 text-muted servicesFourthCardContent"></p>
+            <a href="#" class="fw-light">Discover more -></a>
           </div>
         </div>
       </div>
 
-      <a class="allServices fw-light">View all services</a>
+      <a href="#" class="allServices fw-light">View all services</a>
     </section>
     <!-- Services ends -->
 
@@ -437,7 +424,7 @@
           Integer porta molestie volutpat. Etiam tristique, sem vitae tincidunt
           gravida, eros nulla dapibus lacus, ut dapibus diam dui vel tortor.
         </p>
-        <a class="text-muted">Discover more-></a>
+        <a href="#" class="text-muted">Discover more-></a>
       </div>
     </section>
 
@@ -599,7 +586,7 @@
             </p>
           </div>
         </div>
-        <p class="text-muted">Discover more -></p>
+        <a href="#" class="text-muted">Discover more -></a>
       </div>
       <div class="pt-md-5 pt-0">
         <iframe
@@ -648,7 +635,7 @@
           accusantium libero commodi id officiis itaque esse adipisci,
           necessitatibus asperiores, illo odio.
         </p>
-        <a class="text-white fw-light">Join Us</a>
+        <a href="#" class="text-white fw-light">Join Us</a>
       </div>
     </section>
     <!-- join us ends -->
@@ -669,7 +656,9 @@
       </div>
       <p class="text-muted">
         Will be used in accordance with our
-        <span class="text-decoration-underline">Privacy Policy</span>
+        <a href="#" class="text-decoration-underline text-muted"
+          >Privacy Policy</a
+        >
       </p>
     </section>
     <!-- get news and update ends -->
@@ -691,29 +680,22 @@
           <div
             class="d-flex align-items-md-center align-items-start flex-column flex-md-row"
           >
-            <p class="">Follow us:</p>
-            <div class="d-flex align-items-center w-25 gap-2 mb-3 ms-md-3">
-              <img
-                src="./assets/svg/facebook.svg"
-                alt="facebookImage"
-                class="w-25"
-              />
-              <img
-                src="./assets/svg/twitter.svg"
-                alt="twitterImage"
-                class="w-25"
-              />
-              <img src="./assets/svg/insta.svg" alt="instaImage" class="w-25" />
-              <img
-                src="./assets/svg/youtube.svg"
-                alt="youtubeImage"
-                class="w-25"
-              />
-              <img
-                src="./assets/svg/pinterest.svg"
-                alt="pinterestImage"
-                class="w-25"
-              />
+            <p>Follow us:</p>
+            <div
+              class="d-flex align-items-center w-100 gap-0 gap-sm-2 mb-3 ms-md-3"
+            >
+              <a href="#"
+                ><img src="./assets/svg/facebook.svg" alt="facebookImage"
+              /></a>
+              <a href="#"
+                ><img src="./assets/svg/twitter.svg" alt="twitterImage"
+              /></a>
+              <a href="#"
+                ><img src="./assets/svg/insta.svg" alt="instaImage"
+              /></a>
+              <a href="#"
+                ><img src="./assets/svg/youtube.svg" alt="youtubeImage"
+              /></a>
             </div>
           </div>
         </div>
@@ -801,7 +783,7 @@
           </div>
           <div>
             <p class="footerTextColor">Need Live Support?</p>
-            <p>reservation@mikalto.com</p>
+            <a href="#" class="text-white">reservation@mikalto.com</a>
           </div>
         </div>
       </div>

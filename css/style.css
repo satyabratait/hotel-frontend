@@ -13,6 +13,11 @@
 
 a {
   text-decoration: none;
+  color: #0a205c;
+}
+
+img {
+  border-radius: 6%;
 }
 
 button {
@@ -50,10 +55,18 @@ button {
 }
 
 .checkIn {
-  width: 50%;
+  width: 100%;
 }
 
 .checkOut {
+  width: 100%;
+}
+
+.checkIn div {
+  width: 50%;
+}
+
+.checkOut div {
   width: 50%;
 }
 
@@ -65,18 +78,18 @@ button {
   width: 25%;
 }
 
-.aboutUs-partOne a{
-  width: 57%;
+.aboutUs-partOne a {
+  background-color: transparent;
+  color: white !important;
   padding-top: 1.5%;
   padding-bottom: 1.5%;
-  text-align: center;
-  background-color: white;
-  color: black !important;
 }
 
 .aboutUs-partOne a:hover {
-  background-color: transparent;
-  color: white !important;
+  width: 57%;
+  text-align: center;
+  background-color: white;
+  color: black !important;
 }
 
 .aboutUs-partTwo button {
@@ -95,19 +108,10 @@ button {
 }
 
 .welcomeImages img {
-  width: 30%;
-}
-
-.welcomeImagesFirst {
-  display: block;
-}
-
-.welcomeImagesThird {
-  display: block;
-}
-
-.welcomeImagesSecond {
-  display: block;
+  width: 100%;
+  margin-top: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .aboutRooms {
@@ -115,25 +119,24 @@ button {
   padding-top: 6%;
   padding-left: 5%;
   padding-bottom: 4%;
+  background-color: #0a205c;
+  color: white;
 }
 
-.rooms button {
-  width: 60%;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
+.aboutRooms a {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  padding: 2% 2% 2% 2%;
+  border: 2px solid white;
 }
 
 .roomsImage {
   width: 100%;
 }
 
-.aboutRooms {
-  background-color: #0a205c;
-  color: white;
-}
-
-.reasonsToChoose img {
-  padding-top: -10%;
+.roomsImage img {
+  border-radius: 0%;
 }
 
 .activites {
@@ -143,6 +146,7 @@ button {
 
 .activites img {
   width: 100%;
+  border-radius: 0%;
 }
 
 .bookYourStay {
@@ -292,6 +296,10 @@ footer {
   background-color: #0a205c;
 }
 
+.footerSocialLinks img {
+  width: 50%;
+}
+
 .footerCopyright img {
   width: 25px;
 }
@@ -306,12 +314,12 @@ footer {
 }
 
 @media screen and (min-width: 576px) {
-  .aboutUs-partOne a {
+  .aboutUs-partOne a:hover {
     width: 30%;
   }
 
-  .rooms button {
-    width: 40%;
+  .rooms a {
+    width: 30%;
   }
 
   .allServices {
@@ -327,9 +335,17 @@ footer {
     padding-top: 1%;
     padding-bottom: 1%;
   }
+
+  .footerSocialLinks img {
+    width: 25%;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  img {
+    border-radius: 0%;
+  }
+
   .navbar img {
     width: 15%;
   }
@@ -364,36 +380,42 @@ footer {
     width: 25%;
   }
 
-  .aboutUs-partOne a {
-    width: 30%;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
+  .aboutUs-partOne a:hover {
+    width: 50%;
+  }
+
+  .welcomeImages img {
+    width: 60%;
+    padding-right: 5%;
+    padding-left: 0%;
   }
 
   .welcomeImagesFirst {
-    display: block;
     position: absolute;
     top: 10%;
   }
 
   .welcomeImagesThird {
-    display: block;
     position: absolute;
-    top: 50%;
+    top: 36%;
     left: 13%;
   }
 
   .welcomeImagesSecond {
-    display: block;
     position: absolute;
-    top: 30%;
-    left: 40%;
+    top: 22%;
+    right: 0%;
+  }
+
+  .rooms a {
+    width: 50%;
   }
 
   .aboutRooms {
     width: 40%;
     padding-top: 6%;
     padding-left: 4%;
+    padding-right: 3%;
   }
 
   .roomsImage {
@@ -473,9 +495,43 @@ footer {
     padding-left: 5%;
     padding-right: 5%;
   }
+
+  .footerSocialLinks img {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .aboutUs-partOne a:hover {
+    width: 30%;
+  }
+
+  .welcomeImages img {
+    width: 50%;
+    padding-right: 0%;
+  }
+
+  .welcomeImagesFirst {
+    position: absolute;
+    top: 10%;
+  }
+
+  .welcomeImagesThird {
+    position: absolute;
+    top: 40%;
+    left: 13%;
+  }
+
+  .welcomeImagesSecond {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+  }
+
+  .rooms a {
+    width: 35%;
+  }
+
   .joinUsContents a {
     width: 20%;
     padding-top: 1%;
@@ -487,7 +543,7 @@ footer {
     padding-right: 15%;
   }
 
-  .footerSocialLinks{
+  .footerSocialLinks {
     width: 20%;
   }
 }
