@@ -37,20 +37,20 @@ button {
   justify-content: space-around;
 }
 
-.aboutUs-partOne {
+.aboutUsPartOne {
   width: 100%;
   color: white;
   padding-left: 6%;
 }
 
-.aboutUs-partTwo {
+.aboutUsPartTwo {
   display: flex;
   justify-content: start;
   padding-left: 6%;
   width: 100%;
 }
 
-.aboutUs-partTwo form {
+.aboutUsPartTwo form {
   width: 75%;
 }
 
@@ -66,33 +66,49 @@ button {
   width: 50%;
 }
 
+.checkIn p {
+  color: #0a205c;
+}
+
 .checkOut div {
   width: 50%;
+}
+
+.checkOut p {
+  color: #0a205c;
 }
 
 .userRoom {
   width: 25%;
 }
 
+.userRoom p {
+  color: #0a205c;
+}
+
 .childRoom {
   width: 25%;
 }
 
-.aboutUs-partOne a {
+.childRoom p {
+  color: #0a205c;
+}
+
+.aboutUsPartOne a {
   background-color: transparent;
   color: white !important;
   padding-top: 1.5%;
   padding-bottom: 1.5%;
 }
 
-.aboutUs-partOne a:hover {
+.aboutUsPartOne a:hover {
   width: 57%;
   text-align: center;
   background-color: white;
   color: black !important;
 }
 
-.aboutUs-partTwo button {
+.aboutUsPartTwo button {
   width: 100%;
   padding-top: 1.5%;
   padding-bottom: 1.5%;
@@ -157,7 +173,7 @@ button {
 }
 
 .discover {
-  background: url("/assets/discover-more/swimming.jpeg"), no-repeat;
+  background: url("../assets/discover-more/swimming.jpeg"), no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -222,7 +238,7 @@ button {
 }
 
 iframe {
-  width: 100%;
+  width: 80%;
   height: 200%;
 }
 
@@ -282,6 +298,22 @@ iframe {
   object-fit: cover;
 }
 
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  background: white;
+  color: black;
+  box-shadow: 0 0 10px;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  padding: 15px;
+  font-size: 10px !important;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .subscribeNewsForm {
   width: 100%;
 }
@@ -314,7 +346,7 @@ footer {
 }
 
 @media screen and (min-width: 576px) {
-  .aboutUs-partOne a:hover {
+  .aboutUsPartOne a:hover {
     width: 30%;
   }
 
@@ -350,17 +382,17 @@ footer {
     width: 15%;
   }
 
-  .aboutUs-partOne {
+  .aboutUsPartOne {
     width: 50%;
     padding-left: 5%;
   }
 
-  .aboutUs-partTwo {
+  .aboutUsPartTwo {
     justify-content: center;
     width: 50%;
   }
 
-  .aboutUs-partTwo input {
+  .aboutUsPartTwo input {
     width: 90%;
   }
 
@@ -380,7 +412,7 @@ footer {
     width: 25%;
   }
 
-  .aboutUs-partOne a:hover {
+  .aboutUsPartOne a:hover {
     width: 50%;
   }
 
@@ -420,6 +452,12 @@ footer {
 
   .roomsImage {
     width: 60%;
+  }
+
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+  padding: 17px;
+  font-size: 20px !important
   }
 
   .activites img {
@@ -502,7 +540,13 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
-  .aboutUs-partOne a:hover {
+  .aboutUs {
+    width: auto;
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+
+  .aboutUsPartOne a:hover {
     width: 30%;
   }
 
@@ -530,6 +574,12 @@ footer {
 
   .rooms a {
     width: 35%;
+  }
+
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+  padding: 20px;
+  font-size: 20px !important
   }
 
   .joinUsContents a {
